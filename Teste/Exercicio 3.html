@@ -1,0 +1,25 @@
+<!--QUESTÃO 3) Construa utilizando HTML e JavaScript um link que ao ser clicado, abre um alerta do navegador.-->
+
+<!--indica ao browser qual versão da linguagem usada-->
+<!DOCTYPE html>
+<!--Linhas 6 e 22: abertura e fechamento da tag html, que delimita o documento.-->
+<html>
+
+<head>
+  <!--Definindo a função "alerta" e seu conteúdo-->
+  <script language="Javascript" type="text/javascript">
+    function alerta() {
+      alert("Opa, Olá avaliador, como está sendo seu dia?!")
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!--Chamando a função "Alerta" ao clickar no link da pagina e exibindo o conteúdo como uma caixa
+ de alerta no navegador-->
+  <a href="http://seulink.com" onClick="alerta()">Link</a>
+</body>
+
+</html>

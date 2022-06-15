@@ -1,0 +1,116 @@
+<!--QUESTÃO 15) Crie uma página web conforme o layout abaixo que seja responsiva para
+ser utilizada nos diferentes navegadores e dispositivos:-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Declarando os itens do grid e suas posições-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .item1 {
+            grid-area: A;
+        }
+
+        .item2 {
+            grid-area: B;
+        }
+
+        .item3 {
+            grid-area: C;
+        }
+
+        .item4 {
+            grid-area: D;
+        }
+
+        .item5 {
+            grid-area: E;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'A A A A A A'
+                'B B B B E E'
+                'C C D D E E';
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+
+        .item1 {
+            float: left;
+            width: 100%;
+        }
+
+        .item2 {
+            padding: 10px;
+            margin-top: 3px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .item3 {
+            float: left;
+            width: 100%;
+            padding: 10 3px;
+            overflow: hidden;
+            margin-top: 3px;
+        }
+
+        .item4 {
+            background-color: lightblue;
+            float: left;
+            width: 100%;
+            padding: 10px 15px;
+            margin-top: 3px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* Para telas largas */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width:500px) {
+
+            /* para telas pequenas */
+            .item1,
+            .item2,
+            .item3,
+            .item4,
+            .item5 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<!--indicando o corpo do site-->
+<body>
+    <div style="overflow:auto">
+        <div class="grid-container">
+            <div class="item1">A</div>
+            <div class="item2">B</div>
+            <div class="item3">C</div>
+            <div class="item4">D</div>
+            <div class="item5">E</div>
+        </div>
+
+</body>
+
+</html>

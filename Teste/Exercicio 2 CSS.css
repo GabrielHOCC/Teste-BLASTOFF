@@ -1,0 +1,10 @@
+/* QUESTÃO 2) Em um determinado projeto os cabeçalhos devem estar previamente
+definidos com fonte Arial, devem estar em negrito e em caixa alta. Como você faria
+para esses parâmetros serem implementados neste projeto? */
+
+/*OBS: PARA A FUNCIONALIDADE DE TAL IMPLEMENTAÇÃO, É NECESSARIO UTILIZAR OS ARQUIVOS 
+  DO EXERCICIO 2 CSS E HTML SIMULTANEAMENTE*/
+
+span {
+    text-transform: uppercase;
+}

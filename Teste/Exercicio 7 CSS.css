@@ -1,0 +1,48 @@
+/*OBS: PARA A FUNCIONALIDADE DE TAL IMPLEMENTAÇÃO, É NECESSARIO UTILIZAR OS ARQUIVOS 
+  DO EXERCICIO 7 CSS E HTML SIMULTANEAMENTE*/
+
+/*QUESTÃO 7) Um dos critérios de um determinado projeto é que todos os links devem
+ficar sublinhados quando o usuário passar o mouse por cima deles. Escreva o código
+para garantir essa regra. */
+
+/*Atribuindo o design dos links */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 14px;
+}
+/* Modificando o background e animando ao passar o mouse */
+h1 {
+    background: #333;
+    float: left;
+    margin: 20px;
+    padding: 20px 30px;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}

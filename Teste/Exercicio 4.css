@@ -1,0 +1,18 @@
+/*QUESTÃO 4) Descreva em CSS a seguinte regra: todos os itens de uma lista devem
+estar orientados na vertical.*/
+
+
+/* Indicicando que a lista pode ter uma posição flexivel, porém, orientando apenas na vertical/coluna*/
+/* indicando como .faixa ul, pois no arquivo HTML utilizei como "<div class="coluna">" */
+.coluna ul {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  /*orientando os itens da lista verticalmente em coluna*/
+  flex-direction: column;
+}
+
+.coluna ul li {
+  list-style-type: none;
+  padding-right: 14px;
+}
